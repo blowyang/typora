@@ -1,0 +1,1 @@
+新建系统变量 **MAVEN_HOME**，变量值：D:\apache-maven-3.6.0
