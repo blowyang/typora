@@ -2,6 +2,10 @@
 
 `>mysql -u root -p`
 
+### 查看所有用户
+
+select host, user from mysql.user;
+
 ### 更改用户名密码
 
 以root用户为例，进行说明
