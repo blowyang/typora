@@ -61,7 +61,7 @@ scp ~/.ssh/id_rsa.pub blue@<ssh_server_ip>:~
 在服务端执行命令
 
 ```
-cat  id_rsa.pub >> ～/.ssh/authorized_keys
+cat  id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
 如果有修改配置/etc/ssh/sshd_config，需要重启ssh服务器
@@ -96,3 +96,6 @@ IdentityFile ~/.ssh/id_rsa
 #如果有其他的私钥，还要再加入其他私钥的路径
 IdentityFile ~/.ssh/blue_rsa
 ```
+对于非root用户，还需修改~/.ssh文件夹的权限
+
+`chmod 700 ~/.ssh`
