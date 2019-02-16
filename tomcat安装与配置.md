@@ -39,7 +39,7 @@ sudo vi tomcat
 ### END INIT INFO
  
 RETVAL=0
-export CATALINA_BASE=/usr/tomcat8   # xxx为自己的用户名
+export CATALINA_HOME=/usr/tomcat8   # xxx为自己的用户名
  
 start()
 {
